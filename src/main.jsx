@@ -11,6 +11,7 @@ import {
 import DMs from './DMs.jsx';
 import Navbar from './Navbar.jsx';
 import Email from './Email.jsx';
+import Header from './Header.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -28,6 +29,7 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Provider store={store}>
+      <Header></Header>
       <Navbar></Navbar>
       <RouterProvider router={router} />
     </Provider>

@@ -7,7 +7,7 @@ function Navbar() {
   
   return (
     <>
-       <div style={{display:'flex', flexDirection:'row', gap:'10vw', paddingBottom:'10vh', justifyContent:'center'}}>
+       <div style={{display:'flex', flexDirection:'row', gap:'10vw', paddingBottom:'5vh', paddingTop:'5vh', justifyContent:'center'}}>
       <li>
         <a href="/">Instagram Comments</a>
       </li>
