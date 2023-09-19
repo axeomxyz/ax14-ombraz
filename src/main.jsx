@@ -7,31 +7,39 @@ import store from '../redux';
 import {
   createBrowserRouter,
   RouterProvider,
+  Outlet
 } from "react-router-dom";
 import DMs from './DMs.jsx';
 import Navbar from './Navbar.jsx';
 import Email from './Email.jsx';
 import Header from './Header.jsx';
+import Root from './routes/root.jsx';
 const router = createBrowserRouter([
+  
   {
     path: "/",
-    element: <App />,
+    element: <Root />,
+    children: [
+      {
+        path: "/",
+        element: <App />,
+      },
+      {
+        path: "/dm",
+        element: <DMs></DMs>
+      },
+      {
+        path: "/email",
+        element: <Email></Email>
+      },
+    ],
   },
-  {
-    path: "/dm",
-    element: <DMs></DMs>
-  },
-  {
-    path: "/email",
-    element: <Email></Email>
-  }
+ 
 ]);
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Provider store={store}>
-      <Header></Header>
-      <Navbar></Navbar>
-      <RouterProvider router={router} />
+      <RouterProvider router={router}></RouterProvider>
     </Provider>
   </React.StrictMode>,
 )

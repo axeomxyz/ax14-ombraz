@@ -9,13 +9,13 @@ function Navbar() {
     <>
        <div style={{display:'flex', flexDirection:'row', gap:'10vw', paddingBottom:'5vh', paddingTop:'5vh', justifyContent:'center'}}>
       <li>
-        <a href="/">Instagram Comments</a>
+      <Link to="/">Instagram Comments</Link>
       </li>
       <li>
-        <a href="/dm">Instagram DMs</a>
+      <Link to="dm">Instagram DMs</Link>
       </li>
       <li>
-        <a href="/email">Email Responses</a>
+      <Link to="email">Email Responses</Link>
       </li>
     </div>
       
