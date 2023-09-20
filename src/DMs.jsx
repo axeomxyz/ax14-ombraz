@@ -28,8 +28,8 @@ function DMs() {
         </div>
         <FullPageChat
 
-          chatflowid="cdca309d-aa51-45f6-9415-7b1aa3cc49bc"
-          apiHost="http://localhost:3000"
+          chatflowid="4a69851a-9712-4919-b5d2-25dec1561d31"
+          apiHost="https://axeom-demos.onrender.com"
           theme={{
             chatWindow: {
               welcomeMessage: "Hello! This is the Instagram DMs demo. (Users will not see this message)",

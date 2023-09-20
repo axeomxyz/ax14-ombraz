@@ -18,7 +18,7 @@ const { getFlowiseReply } = handlerSlice.actions
 export function flowiseReply(payload) {
     return async function (dispatch) {
         try {
-            let reply = await axios.post("http://localhost:3000/api/v1/prediction/007217da-7d63-418b-ba61-cfebc15f8a8e", payload);
+            let reply = await axios.post("https://axeom-demos.onrender.com/api/v1/prediction/0bc7ea74-6394-4a42-90da-c38ba3b90fa2", payload);
             return dispatch(getFlowiseReply(reply.data))
         } catch (error) {
             return console.log('flow', (error))
