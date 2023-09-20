@@ -7,7 +7,7 @@ function Header() {
   
   return (
     <>
-       <header style={{width:'100%', height:'auto', backgroundColor:'#333536'}}>
+       <header style={{width:'100%', height:'auto', backgroundColor:'#333536', display:'flex', justifyContent:'center'}}>
             <img src={logo} style={{width:'25%', padding:'2%'}}></img>
        </header>
       
