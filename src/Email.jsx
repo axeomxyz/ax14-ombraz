@@ -28,8 +28,8 @@ function Email() {
                     <p style={{paddingLeft: '1vw', fontSize:'13px'}}>&lt;support@ombraz.com&gt; </p>
                 </div>
                 <FullPageChat
-                    chatflowid="7a060c20-75ed-45c5-bc3f-66e42124ad7d"
-                    apiHost="http://localhost:3000"
+                    chatflowid="e51d45fa-e4bc-4c32-989c-270c1ca425d5"
+                    apiHost="https://axeom-demos.onrender.com"
                     theme={{
                         chatWindow: {
                             welcomeMessage: "Hello! This is the Email Response demo. (Users will not see this message)",
